@@ -1,0 +1,9 @@
+{
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on"
+    },
+    "editor.suggest.showFiles": true,
+    "code-runner.saveFileBeforeRun": true,
+    "search.quickOpen.includeSymbols": true
+}

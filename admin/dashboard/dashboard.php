@@ -1,0 +1,38 @@
+<?php include_once('../partials/inc/header.php'); ?>
+<?php include_once('../partials/inc/sidebar.php'); ?>
+<?php include_once('../partials/inc/navbar.php'); ?>
+<div class="container mt-2"  id="main">
+    <div class="row g-3">
+        <div class="col-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header bg-light text-dark p-1 text-center">Dashboard</div>
+                <div class="card-body">
+                    <h5 class="card-title bg-dark p-2"><span class="me-2"><i class="fa-sharp fa-solid fa-eye-low-vision"></i></span>Visited Site</h5>
+                    <p class="card-text text-center"><span class="me-2"><i class="fa-sharp fa-solid fa-person"></i></span>12000 people visited</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-header bg-light text-dark p-1 text-center">Dashboard</div>
+                <div class="card-body">
+                    <h5 class="card-title bg-dark p-2"><span class="me-2"><i class="fa-sharp fa-solid fa-address-card"></i></span>New Registration</h5>
+                    <p class="card-text text-dark text-center"><span class="me-2"><i class="fa-sharp fa-solid fa-person"></i></span>50 People Pending</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header bg-light text-dark p-1 text-center">Dashboard</div>
+                <div class="card-body">
+                    <h5 class="card-title bg-dark p-2"><span class="me-2"><i class="fa-sharp fa-solid fa-users-viewfinder"></i></span>Users</h5>
+                    <p class="card-text text-center"><span class="me-2"><i class="fa-sharp fa-solid fa-person"></i></span>100 People</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card bg-dark">
+        <img src="../../public/assets/images/Admin/Dashboard/1_pok-aGqc7N9f5_LGYr7Ktg.png" class="card-img" alt="...">
+    </div>
+</div>
+<?php include_once('../partials/inc/footer.php'); ?>

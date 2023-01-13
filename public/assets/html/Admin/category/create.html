@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <style>
+        #sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(105, 124, 128);
+            overflow-x: hidden;
+            padding-top: 20px;
+            }
+            #main {
+                margin-left: 200px; /* Same as the width of the sidenav */
+                }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../../css/admin/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="row">
+    <div class="col-2" id="sidenav">
+      <ul class="nav flex-column my-2">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">
+            <span><img src="../../../images/Admin/Admin_logo.png" alt="AdminLTELogo" height="50" width="50" class="rounded-circle"></span>
+            <span class="fw-bold fs-4">Admin</span>
+          </a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="../index.html"><span><i class="fa-sharp fa-solid fa-house me-1"></i></span>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#"><span><i class="fa-sharp fa-solid fa-chess-board me-1"></i></span>Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="../table/table.html"><span><i class="fa-sharp fa-solid fa-table me-1"></i></span>Table</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="../form/list.html"><span><i class="fa-sharp fa-solid fa-file me-1"></i></span>Form</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="../event/list.html"><span><i class="fa-sharp fa-solid fa-calendar-week me-1"></i></span>Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="../category/list.html"><span><i class="fa-sharp fa-solid fa-clipboard me-1"></i></span>Category of Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="./product/list.html"><span><i class="fa-sharp fa-solid fa-cart-shopping me-1"></i></i></span>Products</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <!-- Sidebar End -->
+    <!-- Navbar -->
+    <div id="main">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="../../../images/Admin/Admin_logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top rounded-circle me-1"><span class="fw-bold">Admin</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../table/table.html">Table</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../form/list.html">Form</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../event/list.html">Event</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../category/list.html">Category of Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../product/list.html">Products</a>
+                </li>
+              </ul>
+            </div>
+              <form class="d-flex ms-5">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </form>
+              <div class="ms-5">
+                  <button type="button" class="btn btn-outline-danger">Logout</button>
+              </div>
+          </div>
+        </nav>
+      </div>
+       <!-- Navbar End -->
+<div class="container"  id="main">
+ <!-- Category Form-->
+ <div class="card p-3 mt-2 shadow-lg">
+  <h3 class="text-center border border-5 border-dark border-top-0 border-bottom-0 bg-info text-dark p-1">Create Category</h3>
+  <div class="col-2">
+   <a href="./list.html" class="btn btn-warning">List</a>
+   </div>
+  <form class="mt-2">
+   <div class="mb-3">
+     <label for="exampleInputCategoryName" class="form-label">Category Name</label>
+     <input type="text" class="form-control" id="exampleInputCategoryName" aria-describedby="categoryname">
+   </div>
+   <div class="mb-3">
+     <label for="exampleInputDescription" class="form-label">Description</label>
+     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+   </div>
+   <div class="text-end me-3">
+     <button type="submit" class="btn btn-primary">Submit</button>
+   </div>
+   </form>
+ </div>
+ <!-- Category Form-->
+</div>
+ <!-- Footer -->
+ <div class="bg-dark text-light text-center fixed-bottom" id="main">
+  <footer>Created by @swapnil_roy/2022</footer>
+</div>
+<!-- footer End -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

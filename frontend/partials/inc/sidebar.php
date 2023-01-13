@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawpno</title>
+        <!-- Css -->
+        <link rel="stylesheet" href="../public/assets/css/Frontend/Bootstrap/css/bootstrap.min.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- Main Part Start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 bg-light">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./shawpno_Deals.php">Deal Of the Day</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./electronic.php">Electronic Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./organic.php">Organic Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./fashion.php">Fashion & Life Style</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./Fruits.php">Fruits & Vegetable</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./voucher.php">Voucher Offers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-9 mt-2">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../public/assets/images/Frontend/image/Eagle Super Aerosol 475ml Buy 1 Get 1 H 10 Mar 2022.webp"
+                                class="d-block w-100" alt="slide1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../public/assets/images/Frontend/image/PLB H 24 Aug 2021.webp" class="d-block w-100" alt="slide2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../public/assets/images/Frontend/image/Himalaya H 11 Sep 2022.webp" class="d-block w-100" alt="slide3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Part End -->
+</body>
+</html>
